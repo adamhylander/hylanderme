@@ -1,0 +1,8 @@
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #fafafa;
+    background: url("./images/bg.png");
+    overflow-x: hidden;
+    font-family: "monospace";
+}

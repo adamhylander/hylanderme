@@ -1,7 +1,7 @@
-import { styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import Header from "../components/Header";
 import Profile from "../components/Profile";
+import Resume from "../components/Resume";
 
 function Main() {
   return (
@@ -9,15 +9,20 @@ function Main() {
       sx={{
         display: "flex",
         flexDirection: "column",
-        alignItems: "flex-start",
-        width: "100%",
+        alignItems: "center", // Updated line
+        marginTop: "20px",
       }}
     >
-      <Box sx={{ marginTop: "20px", width: "60%" }}>
-        <Header />
-      </Box>
-      <Box>
-        <Profile />
+      <Box sx={{ display: "flex", width: "80%" }}>
+        <Box sx={{ width: "24%" }}>
+          <Profile />
+        </Box>
+        <Box sx={{ width: "76%", marginLeft: "20px" }}>
+          <Header />
+          <Box sx={{ marginTop: "20px" }}>
+            <Resume />
+          </Box>
+        </Box>
       </Box>
     </Box>
   );

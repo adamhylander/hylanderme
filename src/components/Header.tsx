@@ -9,7 +9,7 @@ function Header() {
       sx={{
         borderRadius: "10px",
         backgroundColor: "#fafafa",
-        width: "80%",
+        width: "100%",
         height: "75px",
         padding: "0",
         margin: 0,

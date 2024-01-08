@@ -1,21 +1,43 @@
-import Container from "@mui/material/Container";
-import Tab from "@mui/material/Tab";
-import Tabs from "@mui/material/Tabs";
+import { Box, Tab, Tabs, Container } from "@mui/material";
 import React from "react";
+import Summary from "./Summary";
+import Career from "./Career";
+import Academics from "./Academics";
+import Publications from "./Publications";
+import Achievtivities from "./Achievtivities";
 
 function Resume() {
   const tabsList = [
-    { value: "summary", label: "Summary" },
-    { value: "career", label: "Career" },
-    { value: "academics", label: "Academics" },
-    // Add more values and labels here if needed
+    { value: "Summary", label: "Summary" },
+    { value: "Career", label: "Career" },
+    { value: "Academics", label: "Academics" },
+    { value: "Publications", label: "Publications" },
+    { value: "Achievtivities", label: "Achievements & Extra-Curricular" },
   ];
 
-  const [value, setValue] = React.useState("summary");
+  const [value, setValue] = React.useState("Summary");
 
   const handleChange = (event: React.SyntheticEvent, newValue: string) => {
     setValue(newValue);
   };
+
+  const renderTabComponent = () => {
+    switch (value) {
+      case "Summary":
+        return <Summary />;
+      case "Career":
+        return <Career />;
+      case "Academics":
+        return <Academics />;
+      case "Publications":
+        return <Publications />;
+      case "Achievtivities":
+        return <Achievtivities />;
+      default:
+        return <Summary />;
+    }
+  };
+
   return (
     <Container
       style={{ paddingLeft: 0, paddingRight: 0 }}
@@ -41,24 +63,21 @@ function Resume() {
             backgroundColor: "#FFA000",
           },
           "& .Mui-selected": {
-            color: "#FFA000", // Text color for the selected tab
+            color: "#FFA000",
             "&.MuiTab-textColorPrimary": {
-              color: "#FFA000", // Text color for the selected tab when active
+              color: "#FFA000",
             },
           },
           "& .MuiTab-root": {
-            color: "#FFA000", // Text color for unselected tabs
+            color: "#FFA000",
           },
         }}
       >
         {tabsList.map((tab, index) => (
-          <Tab
-            key={index} // Ensure each tab has a unique key
-            value={tab.value}
-            label={tab.label}
-          />
+          <Tab key={index} value={tab.value} label={tab.label} />
         ))}
       </Tabs>
+      <Box style={{ padding: "20px" }}>{renderTabComponent()}</Box>
     </Container>
   );
 }

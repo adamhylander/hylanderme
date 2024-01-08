@@ -9,7 +9,7 @@ function Main() {
       sx={{
         display: "flex",
         flexDirection: "column",
-        alignItems: "center", // Updated line
+        alignItems: "center",
         marginTop: "20px",
       }}
     >

@@ -1,6 +1,6 @@
 import Container from "@mui/material/Container";
 import CV from "../images/cv.png";
-import ContactInfo from "./ContactInfo";
+import ContactInfo from "../molecules/ContactInfo";
 
 function Profile() {
   return (

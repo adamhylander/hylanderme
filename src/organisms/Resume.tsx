@@ -1,10 +1,10 @@
 import { Box, Tab, Tabs, Container } from "@mui/material";
 import React from "react";
-import Summary from "./Summary";
-import Career from "./Career";
-import Academics from "./Academics";
-import Publications from "./Publications";
-import Achievtivities from "./Achievtivities";
+import Summary from "../templates/Summary";
+import Career from "../templates/Career";
+import Academics from "../templates/Academics";
+import Publications from "../templates/Publications";
+import Achievtivities from "../templates/Achievtivities";
 
 function Resume() {
   const tabsList = [

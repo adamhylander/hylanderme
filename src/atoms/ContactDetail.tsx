@@ -6,25 +6,25 @@ interface ContactDetailProps {
   link?: string;
 }
 
-const ContactDetail: React.FC<ContactDetailProps> = (props) => {
-  if (!props.link) {
+const ContactDetail: React.FC<ContactDetailProps> = ({ link, headliner, text }) => {
+  if (!link) {
     return (
       <div style={{ fontFamily: "monospace" }}>
         <span style={{ fontWeight: "600", fontSize: "18px" }}>
-          {props.headliner}:
+          {headliner}:
         </span>
         <br />
-        <span style={{ color: "#aaa", fontSize: "16px" }}>{props.text}</span>
+        <span style={{ color: "#aaa", fontSize: "16px" }}>{text}</span>
       </div>
     );
   } else {
     return (
       <div style={{ fontFamily: "monospace" }}>
         <span style={{ fontWeight: "600", fontSize: "18px" }}>
-          {props.headliner}:
+          {headliner}:
         </span>
         <br />
-        <a href={props.link} style={{ color: "#aaa", fontSize: "16px" }}>{props.text}</a>
+        <a href={link} style={{ color: "#aaa", fontSize: "16px" }}>{text}</a>
       </div>
     );
   }

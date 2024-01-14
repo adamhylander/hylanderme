@@ -50,7 +50,7 @@ function Header() {
             color: "black",
             textDecoration: "none",
             marginRight: "auto",
-            marginLeft: "20px"
+            marginLeft: "20px",
           }}
         >
           HYLANDER.ME

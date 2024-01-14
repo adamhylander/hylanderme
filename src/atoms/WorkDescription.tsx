@@ -63,16 +63,15 @@ const WorkDescription: React.FC<WorkDescriptionProps> = ({
         </Typography>
       </div>
       <div
-  style={{
-    marginLeft: "auto",
-    fontSize: "45px",
-    color: "#ffc500",
-    display: isSelected ? "block" : "none",
-  }}
->
-  &#123;
-</div>
-
+        style={{
+          marginLeft: "auto",
+          fontSize: "45px",
+          color: "#ffc500",
+          display: isSelected ? "block" : "none",
+        }}
+      >
+        &#123;
+      </div>
     </div>
   );
 };

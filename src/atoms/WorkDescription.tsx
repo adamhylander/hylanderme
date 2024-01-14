@@ -1,13 +1,13 @@
 import React, { useState } from "react";
-import { Box, Typography } from "@mui/material";
+import { Typography } from "@mui/material";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
 interface WorkDescriptionProps {
   title: string;
   startDate: string;
   stopDate: string;
   company: string;
-  isSelected: boolean;
-  onClick: () => void;
+  description: string,
 }
 
 const WorkDescription: React.FC<WorkDescriptionProps> = ({
@@ -15,15 +15,16 @@ const WorkDescription: React.FC<WorkDescriptionProps> = ({
   startDate,
   stopDate,
   company,
-  isSelected,
-  onClick,
+  description,
 }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
     <div
       style={{
-        width: "520px",
+        width: "100%",
+        height: isHovered ? "130px" : "53px",
+        transition: "0.4s ease-in-out",
         display: "flex",
         marginTop: "2px",
         paddingBottom: "10px",
@@ -33,7 +34,6 @@ const WorkDescription: React.FC<WorkDescriptionProps> = ({
       }}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      onClick={onClick}
     >
       <div style={{ flex: 1 }}>
         <Typography
@@ -61,16 +61,37 @@ const WorkDescription: React.FC<WorkDescriptionProps> = ({
         >
           {startDate} - {stopDate} | {company}
         </Typography>
+        <div style={{ overflowY: "hidden" }}>
+        <Typography
+          style={{
+            fontFamily: "monospace",
+            fontWeight: 550,
+            color: "black",
+            textDecoration: "none",
+            fontSize: "0.9rem",
+            opacity: isHovered ? 1 : 0, 
+            transition: "opacity 0.4s ease-in-out",
+          }}
+        >
+          {description}
+        </Typography>
+        </div>
       </div>
       <div
         style={{
           marginLeft: "auto",
-          fontSize: "45px",
-          color: "#ffc500",
-          display: isSelected ? "block" : "none",
+          display: "flex",
+          alignItems: "center",
+          transition: "transform 0.4s ease-in-out",
+          transform: isHovered ? "rotate(90deg)" : "rotate(0deg)",
         }}
       >
-        &#123;
+        <KeyboardArrowDownIcon
+          style={{
+            fontSize: "40px",
+            color: "#ffc500",
+          }}
+        />
       </div>
     </div>
   );

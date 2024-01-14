@@ -21,13 +21,12 @@ function Career() {
       </Typography>
 
       <Box style={{ display: "flex" }}>
-        <Box style={{ marginTop: "30px" }}>
+        <Box>
           <CareerTimeline />
         </Box>
-        <Box marginLeft={2} style={{ marginTop: "30px" }}>
+        <Box marginLeft={3} style={{ width: "650px" }}>
           <Experience />
         </Box>
-        <Box marginLeft={4}>hello there</Box>
       </Box>
     </Box>
   );

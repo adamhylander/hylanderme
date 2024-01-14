@@ -1,4 +1,7 @@
 import { Typography, Box } from "@mui/material";
+import WorkTitle from "../atoms/WorkDescription";
+import Experience from "../molecules/Experience";
+import CareerTimeline from "../molecules/CareerTimeLine";
 
 function Career() {
   return (
@@ -16,7 +19,16 @@ function Career() {
       >
         Career
       </Typography>
-      
+
+      <Box style={{ display: "flex" }}>
+        <Box style={{ marginTop: "30px" }}>
+          <CareerTimeline />
+        </Box>
+        <Box marginLeft={2} style={{ marginTop: "30px" }}>
+          <Experience />
+        </Box>
+        <Box marginLeft={4}>hello there</Box>
+      </Box>
     </Box>
   );
 }

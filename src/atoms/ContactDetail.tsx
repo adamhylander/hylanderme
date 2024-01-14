@@ -6,7 +6,11 @@ interface ContactDetailProps {
   link?: string;
 }
 
-const ContactDetail: React.FC<ContactDetailProps> = ({ link, headliner, text }) => {
+const ContactDetail: React.FC<ContactDetailProps> = ({
+  link,
+  headliner,
+  text,
+}) => {
   if (!link) {
     return (
       <div style={{ fontFamily: "monospace" }}>
@@ -24,7 +28,9 @@ const ContactDetail: React.FC<ContactDetailProps> = ({ link, headliner, text }) 
           {headliner}:
         </span>
         <br />
-        <a href={link} style={{ color: "#aaa", fontSize: "16px" }}>{text}</a>
+        <a href={link} style={{ color: "#aaa", fontSize: "16px" }}>
+          {text}
+        </a>
       </div>
     );
   }

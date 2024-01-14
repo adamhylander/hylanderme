@@ -1,4 +1,4 @@
-import { AppBar, Toolbar, Typography, Container, Button } from "@mui/material";
+import { AppBar, Toolbar, Typography, Box, Button } from "@mui/material";
 
 import { Facebook, LinkedIn, GitHub, Send, Home } from "@mui/icons-material";
 
@@ -24,8 +24,8 @@ function Header() {
           padding: "0",
         }}
       >
-        <div
-          style={{
+        <Box
+          sx={{
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
@@ -34,24 +34,27 @@ function Header() {
             borderTopLeftRadius: "10px",
             borderBottomLeftRadius: "10px",
             width: "12%",
+            "@media screen and (max-width: 440px)": {
+              display: "none",
+            },
           }}
         >
           <Home style={{ color: "black", fontSize: "32px" }} />
-        </div>
-        <div>
-          <Typography
-            variant="h6"
-            sx={{
-              fontFamily: "monospace",
-              fontWeight: 700,
-              letterSpacing: ".3rem",
-              color: "black",
-              textDecoration: "none",
-            }}
-          >
-            HYLANDER.ME
-          </Typography>
-        </div>
+        </Box>
+        <Typography
+          variant="h6"
+          sx={{
+            fontFamily: "monospace",
+            fontWeight: 700,
+            letterSpacing: ".3rem",
+            color: "black",
+            textDecoration: "none",
+            marginRight: "auto",
+            marginLeft: "20px"
+          }}
+        >
+          HYLANDER.ME
+        </Typography>
 
         <div
           style={{

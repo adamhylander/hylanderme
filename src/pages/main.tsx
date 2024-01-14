@@ -13,11 +13,33 @@ function Main() {
         marginTop: "20px",
       }}
     >
-      <Box sx={{ display: "flex", width: "80%" }}>
-        <Box sx={{ width: "24%" }}>
+      <Box
+        sx={{
+          display: "flex",
+          "@media screen and (max-width: 1915px)": {
+            width: "80%",
+          },
+        }}
+      >
+        <Box
+          sx={{
+            width: "24%",
+            "@media screen and (min-width: 1915px)": {
+              width: "360px",
+            },
+          }}
+        >
           <Profile />
         </Box>
-        <Box sx={{ width: "76%", marginLeft: "20px" }}>
+        <Box
+          sx={{
+            width: "76%",
+            marginLeft: "20px",
+            "@media screen and (min-width: 1915px)": {
+              width: "1140px",
+            },
+          }}
+        >
           <Header />
           <Box sx={{ marginTop: "20px" }}>
             <Resume />

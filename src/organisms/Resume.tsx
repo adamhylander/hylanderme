@@ -5,6 +5,7 @@ import Career from "../templates/Career";
 import Academics from "../templates/Academics";
 import Publications from "../templates/Publications";
 import Achievtivities from "../templates/Achievtivities";
+import Skills from "../templates/Skills";
 
 function Resume() {
   const tabsList = [
@@ -13,6 +14,7 @@ function Resume() {
     { value: "Academics", label: "Academics" },
     { value: "Publications", label: "Publications" },
     { value: "Achievtivities", label: "Achievements & Extra-Curricular" },
+    { value: "Skills", label: "Skills" },
   ];
 
   const [value, setValue] = React.useState("Summary");
@@ -33,6 +35,8 @@ function Resume() {
         return <Publications />;
       case "Achievtivities":
         return <Achievtivities />;
+      case "Skills":
+        return <Skills />;
       default:
         return <Summary />;
     }
@@ -42,6 +46,8 @@ function Resume() {
     <Container
       style={{ paddingLeft: 0, paddingRight: 0 }}
       sx={{
+        overflowY: "auto",
+        maxWidth: "none !important",
         borderRadius: "18px",
         width: "100%",
         height: "630px",
@@ -52,13 +58,15 @@ function Resume() {
       }}
     >
       <Tabs
+        variant="scrollable"
+        scrollButtons="auto"
         value={value}
         onChange={handleChange}
         indicatorColor="primary"
         aria-label="primary tabs example"
         sx={{
-          marginLeft: "2%",
-          marginRight: "2%",
+          paddingLeft: "1%",
+          paddingRight: "1%",
           "& .MuiTabs-indicator": {
             backgroundColor: "#FFA000",
           },
@@ -70,6 +78,15 @@ function Resume() {
           },
           "& .MuiTab-root": {
             color: "#FFA000",
+          },
+          "& .MuiTabs-scrollButtons.Mui-disabled": {
+            opacity: 0.3,
+          },
+          "& .MuiTabs-scrollButtons": {
+            color: "#D46E00",
+            borderRadius: "18px",
+            width: "2%",
+            margin: "1%",
           },
         }}
       >

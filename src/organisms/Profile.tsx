@@ -9,7 +9,7 @@ function Profile() {
       sx={{
         borderRadius: "18px",
         width: "100%",
-        height: "660px",
+        minHeight: "660px",
         backgroundColor: "#fafafa",
         paddingTop: "10px",
         boxShadow:
@@ -41,10 +41,8 @@ function Profile() {
         }}
       />
 
-    <ContactInfo />
-
+      <ContactInfo />
     </Container>
-
   );
 }
 

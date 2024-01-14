@@ -23,7 +23,7 @@ function ContactInfo() {
             style={{ marginLeft: "-2px", marginRight: "-2px" }}
           />
         </TimelineSeparator>
-        <TimelineContent sx={{ py: '1px' }}>
+        <TimelineContent sx={{ py: "1px" }}>
           <ContactDetail headliner="Email" text="adam@hylander.me" />
         </TimelineContent>
       </TimelineItem>
@@ -32,7 +32,7 @@ function ContactInfo() {
           <TimelineDot style={{ borderColor: "#ffc500" }} variant="outlined" />
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent sx={{ py: '1px' }}>
+        <TimelineContent sx={{ py: "1px" }}>
           <ContactDetail headliner="Phone Number" text="+46 72 - 541 32 11" />
         </TimelineContent>
       </TimelineItem>
@@ -41,19 +41,26 @@ function ContactInfo() {
           <TimelineDot style={{ borderColor: "#ffc500" }} variant="outlined" />
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent sx={{ py: '1px' }}>
-          <ContactDetail headliner="LinkedIn" text="adam-hylander" link="https://www.linkedin.com/in/adam-hylander/" />
+        <TimelineContent sx={{ py: "1px" }}>
+          <ContactDetail
+            headliner="LinkedIn"
+            text="adam-hylander"
+            link="https://www.linkedin.com/in/adam-hylander/"
+          />
         </TimelineContent>
       </TimelineItem>
       <TimelineItem>
         <TimelineSeparator>
           <TimelineDot style={{ borderColor: "#ffc500" }} variant="outlined" />
         </TimelineSeparator>
-        <TimelineContent sx={{ py: '1px' }}>
-          <ContactDetail headliner="GitHub" text="adamhylander" link="https://www.github.com/adamhylander" />
+        <TimelineContent sx={{ py: "1px" }}>
+          <ContactDetail
+            headliner="GitHub"
+            text="adamhylander"
+            link="https://www.github.com/adamhylander"
+          />
         </TimelineContent>
       </TimelineItem>
-      
     </Timeline>
   );
 }

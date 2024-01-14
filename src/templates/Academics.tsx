@@ -24,13 +24,13 @@ function Academics() {
           letterSpacing: ".1rem",
           color: "black",
           textDecoration: "none",
-          fontSize: "1.2rem",
+          fontSize: "1.3rem",
         }}
       >
-        MSc in Information Technology, Linköping University, 2024
+        MSc in Information Technology, Linköping University, 2019 - 2024
       </Typography>
 
-      <div style={{ fontFamily: "Roboto Mono", fontSize: "1rem" }}>
+      <div style={{ fontFamily: "Roboto Mono", fontSize: "1.1rem" }}>
         Started the Master of Science in Information Technology programme in
         autumn 2019. Luckily for me, cybersecurity was deeply embedded into the
         programme. Some of the course programmes include:
@@ -63,12 +63,12 @@ function Academics() {
           letterSpacing: ".1rem",
           color: "black",
           textDecoration: "none",
-          fontSize: "1.2rem",
+          fontSize: "1.3rem",
         }}
       >
         Exchange Semester, KU Leuven, 2022
       </Typography>
-      <div style={{ fontFamily: "Roboto Mono", fontSize: "1rem" }}>
+      <div style={{ fontFamily: "Roboto Mono", fontSize: "1.1rem" }}>
         In autumn 2023 I was on an exchange semester at the Faculty of
         Engineering Science at KU Leuven in Belgium. Some of the course projects
         there included:

@@ -15,7 +15,13 @@ function Summary() {
       >
         About Me
       </Typography>
-      <div style={{ fontFamily: "Roboto Mono", fontSize: "1.4rem" }}>
+      <div
+        style={{
+          fontFamily: "Roboto Mono",
+          fontSize: "1.4rem",
+          padding: "0px 0px 10px 10px",
+        }}
+      >
         My name is Adam Hylander and I am a 24 year old student doing his final
         semester Master of Science in Information Technology at Linköping
         University. I have a passion for the cybersecurity industry with a
@@ -24,7 +30,13 @@ function Summary() {
         Agency).
       </div>
       <br />
-      <div style={{ fontFamily: "Roboto Mono", fontSize: "1.4rem" }}>
+      <div
+        style={{
+          fontFamily: "Roboto Mono",
+          fontSize: "1.4rem",
+          padding: "0px 0px 10px 10px",
+        }}
+      >
         I find myself very social and spend most of my time around other people.
         On my spare time I enjoy playing a round of golf, doing activities, play
         video games, or play board games. I am also spending a lot of time on

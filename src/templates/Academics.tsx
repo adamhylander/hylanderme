@@ -1,8 +1,9 @@
 import { Typography, Box } from "@mui/material";
+import Title from "../atoms/Title";
 
 function Academics() {
   return (
-    <Box>
+    <Box sx={{ overflowY: "auto" }}>
       <Typography
         style={{
           fontFamily: "monospace",
@@ -17,22 +18,26 @@ function Academics() {
         Academical Background
       </Typography>
 
-      <Typography
+      <Title
+        title={"MSc in Information Technology"}
+        startDate={"August 2019"}
+        stopDate={"June 2024"}
+        company={"Linköping University"}
+      />
+
+      <div
         style={{
-          fontFamily: "monospace",
-          fontWeight: 700,
-          letterSpacing: ".1rem",
-          color: "black",
-          textDecoration: "none",
-          fontSize: "1.3rem",
+          fontFamily: "Roboto Mono",
+          fontSize: "1.1rem",
+          marginTop: "5px",
         }}
       >
-        MSc in Information Technology, Linköping University, 2019 - 2024
-      </Typography>
-
-      <div style={{ fontFamily: "Roboto Mono", fontSize: "1.1rem" }}>
         Started the Master of Science in Information Technology programme in
-        autumn 2019. Luckily for me, cybersecurity was deeply embedded into the
+        autumn 2019. I chose the master profile{" "}
+        <a href="https://www.ida.liu.se/edu/ugrad/program/profiler/secsy/">
+          Secure Systems
+        </a>{" "}
+        focusing on Luckily for me, cybersecurity was deeply embedded into the
         programme. Some of the course programmes include:
         <ul>
           <li>
@@ -56,19 +61,20 @@ function Academics() {
         </ul>
       </div>
 
-      <Typography
+      <Title
+        title={"Exchange Semester"}
+        startDate={"September 2022"}
+        stopDate={"February 2023"}
+        company={"KU Leuven"}
+      />
+
+      <div
         style={{
-          fontFamily: "monospace",
-          fontWeight: 700,
-          letterSpacing: ".1rem",
-          color: "black",
-          textDecoration: "none",
-          fontSize: "1.3rem",
+          fontFamily: "Roboto Mono",
+          fontSize: "1.1rem",
+          marginTop: "5px",
         }}
       >
-        Exchange Semester, KU Leuven, 2022
-      </Typography>
-      <div style={{ fontFamily: "Roboto Mono", fontSize: "1.1rem" }}>
         In autumn 2023 I was on an exchange semester at the Faculty of
         Engineering Science at KU Leuven in Belgium. Some of the course projects
         there included:

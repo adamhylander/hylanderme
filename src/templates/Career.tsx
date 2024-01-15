@@ -1,5 +1,5 @@
 import { Typography, Box } from "@mui/material";
-import WorkTitle from "../atoms/WorkDescription";
+import WorkTitle from "../molecules/WorkDescription";
 import Experience from "../molecules/Experience";
 import CareerTimeline from "../molecules/CareerTimeLine";
 

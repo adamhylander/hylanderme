@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import { Typography } from "@mui/material";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import Title from "../atoms/Title";
 
 interface WorkDescriptionProps {
   title: string;
   startDate: string;
   stopDate: string;
   company: string;
-  description: string,
+  description: string;
 }
 
 const WorkDescription: React.FC<WorkDescriptionProps> = ({
@@ -36,45 +37,26 @@ const WorkDescription: React.FC<WorkDescriptionProps> = ({
       onMouseLeave={() => setIsHovered(false)}
     >
       <div style={{ flex: 1 }}>
-        <Typography
-          style={{
-            fontFamily: "monospace",
-            fontWeight: 700,
-            letterSpacing: ".1rem",
-            color: "black",
-            textDecoration: "none",
-            fontSize: "1.2rem",
-            textTransform: "uppercase",
-          }}
-        >
-          {title}
-        </Typography>
-        <Typography
-          style={{
-            fontFamily: "monospace",
-            fontWeight: 550,
-            color: "gray",
-            textDecoration: "none",
-            fontSize: "1rem",
-            textTransform: "uppercase",
-          }}
-        >
-          {startDate} - {stopDate} | {company}
-        </Typography>
+        <Title
+          title={title}
+          startDate={startDate}
+          stopDate={startDate}
+          company={company}
+        />
         <div style={{ overflowY: "hidden" }}>
-        <Typography
-          style={{
-            fontFamily: "monospace",
-            fontWeight: 550,
-            color: "black",
-            textDecoration: "none",
-            fontSize: "0.9rem",
-            opacity: isHovered ? 1 : 0, 
-            transition: "opacity 0.4s ease-in-out",
-          }}
-        >
-          {description}
-        </Typography>
+          <Typography
+            style={{
+              fontFamily: "monospace",
+              fontWeight: 550,
+              color: "black",
+              textDecoration: "none",
+              fontSize: "0.9rem",
+              opacity: isHovered ? 1 : 0,
+              transition: "opacity 0.4s ease-in-out",
+            }}
+          >
+            {description}
+          </Typography>
         </div>
       </div>
       <div

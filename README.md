@@ -1,3 +1,3 @@
 # HYLANDER.ME
 
-Resume website for Adam Hylander.
+Resume website made by and for Adam Hylander.

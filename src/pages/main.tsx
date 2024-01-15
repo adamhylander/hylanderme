@@ -10,7 +10,7 @@ function Main() {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        marginTop: "20px",
+        marginTop: "40px",
       }}
     >
       <Box

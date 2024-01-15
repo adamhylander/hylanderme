@@ -85,8 +85,7 @@ function Academics() {
           </li>
           <li>
             Group project which added functionality to OWASPs Zed Attack Proxy
-            (ZAP) such as a warning for corrupted images and unsafe zipped
-            downloads.
+            (ZAP) such as a warning for corrupted images and zip bombs.
           </li>
         </ul>
       </div>

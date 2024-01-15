@@ -1,6 +1,11 @@
-import { Box, Typography } from "@mui/material";
+import PictureAsPdfIcon from "@mui/icons-material/PictureAsPdf";
+import { Box, Button, Typography } from "@mui/material";
 
 function Publications() {
+  const handleDownload = () => {
+    const pdfPath = process.env.PUBLIC_URL + "/paper.pdf";
+    window.open(pdfPath);
+  };
   return (
     <Box>
       <Typography
@@ -42,8 +47,8 @@ function Publications() {
           }}
         >
           David Hasselquist, Ludvig Bolin, Emil Carlsson, Adam Hylander, Martin
-          Larsson, Erik Voldstad, and Niklas Carlsson, Proc. IFIP Networking,
-          Barcelona, Spain, June 2023.
+          Larsson, Erik Voldstad, and Niklas Carlsson, <br /> Proc. IFIP
+          Networking, Barcelona, Spain, June 2023.
         </Typography>
       </div>
 
@@ -93,6 +98,24 @@ function Publications() {
         practices, with many appearing to reduce the number of domains (and
         subdomains) for which each certificate is responsible.
       </div>
+      <Button
+        startIcon={<PictureAsPdfIcon sx={{ color: "black" }} />}
+        sx={{
+          fontFamily: "monospace",
+          fontWeight: 700,
+          letterSpacing: ".2rem",
+          color: "black",
+          textDecoration: "none",
+          backgroundColor: "#ffc500",
+          borderRadius: "10px",
+          "&:hover": { backgroundColor: "#b89316" },
+          marginTop: "20px",
+          marginLeft: "2%",
+        }}
+        onClick={handleDownload}
+      >
+        DOWNLOAD PDF
+      </Button>
     </Box>
   );
 }

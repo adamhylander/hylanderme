@@ -1,11 +1,14 @@
 import { Box, Tab, Tabs, Container } from "@mui/material";
 import React from "react";
-import Summary from "../templates/Summary";
-import Career from "../templates/Career";
-import Academics from "../templates/Academics";
-import Publications from "../templates/Publications";
-import Achievtivities from "../templates/Achievtivities";
-import Skills from "../templates/Skills";
+import {
+  Summary,
+  Career,
+  Academics,
+  Publications,
+  Skills,
+  ExtraCurricular,
+  Projects,
+} from "../templates";
 
 function Resume() {
   const tabsList = [
@@ -13,7 +16,8 @@ function Resume() {
     { value: "Career", label: "Career" },
     { value: "Academics", label: "Academics" },
     { value: "Publications", label: "Publications" },
-    { value: "Achievtivities", label: "Achievements & Extra-Curricular" },
+    { value: "Projects", label: "Projects" },
+    { value: "ExtraCurricular", label: "Extra-Curricular" },
     { value: "Skills", label: "Skills" },
   ];
 
@@ -33,8 +37,10 @@ function Resume() {
         return <Academics />;
       case "Publications":
         return <Publications />;
-      case "Achievtivities":
-        return <Achievtivities />;
+      case "Projects":
+        return <Projects />;
+      case "ExtraCurricular":
+        return <ExtraCurricular />;
       case "Skills":
         return <Skills />;
       default:

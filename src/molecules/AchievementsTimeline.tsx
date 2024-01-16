@@ -3,12 +3,12 @@ import TimelineItem, { timelineItemClasses } from "@mui/lab/TimelineItem";
 import TimelineSeparator from "@mui/lab/TimelineSeparator";
 import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineDot from "@mui/lab/TimelineDot";
-import SchoolIcon from "@mui/icons-material/School";
-import CoffeeIcon from "@mui/icons-material/Coffee";
-import CodeIcon from "@mui/icons-material/Code";
-import SecurityIcon from "@mui/icons-material/Security";
+import SportsHandballIcon from "@mui/icons-material/SportsHandball";
+import FaceIcon from "@mui/icons-material/Face";
+import WysiwygIcon from "@mui/icons-material/Wysiwyg";
+import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
 
-function CareerTimeline() {
+function AchievementTimeline() {
   return (
     <Timeline
       sx={{
@@ -24,10 +24,10 @@ function CareerTimeline() {
         <TimelineItem key={index}>
           <TimelineSeparator>
             <TimelineDot style={{ borderColor: "#ffc500" }} variant="outlined">
-              {index === 0 && <SecurityIcon />}
-              {index === 1 && <CodeIcon />}
-              {index === 2 && <SchoolIcon />}
-              {index === 3 && <CoffeeIcon />}
+              {index === 0 && <SportsHandballIcon />}
+              {index === 1 && <AttachMoneyIcon />}
+              {index === 2 && <WysiwygIcon />}
+              {index === 3 && <FaceIcon />}
             </TimelineDot>
             {index < 3 && <TimelineConnector sx={{ height: "40px" }} />}
           </TimelineSeparator>
@@ -37,4 +37,4 @@ function CareerTimeline() {
   );
 }
 
-export default CareerTimeline;
+export default AchievementTimeline;

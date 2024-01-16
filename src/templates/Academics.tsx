@@ -37,8 +37,11 @@ function Academics() {
         <a href="https://www.ida.liu.se/edu/ugrad/program/profiler/secsy/">
           Secure Systems
         </a>{" "}
-        focusing on Luckily for me, cybersecurity was deeply embedded into the
-        programme. Some of the course programmes include:
+        focusing on development of secure software systems, combining industrial
+        software development courses with a focus on security. Moreover, as
+        cybersecurity was deeply embedded into the programme I have gained a
+        good understanding of the underlying theory. Some of the course projects
+        include:
         <ul>
           <li>
             Using React I created a game called På-Spårdle which has two game

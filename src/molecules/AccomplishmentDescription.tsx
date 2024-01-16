@@ -1,21 +1,17 @@
-import React, { useState } from "react";
 import { Typography } from "@mui/material";
-import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import Title from "../atoms/Title";
+import { useState } from "react";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
-interface WorkDescriptionProps {
+interface AccomplishmentDescriptionProps {
   title: string;
-  startDate: string;
-  stopDate: string;
-  company: string;
+  date: string;
   description: string;
 }
 
-const WorkDescription: React.FC<WorkDescriptionProps> = ({
+const AccomplishmentDescription: React.FC<AccomplishmentDescriptionProps> = ({
   title,
-  startDate,
-  stopDate,
-  company,
+  date,
   description,
 }) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -37,12 +33,31 @@ const WorkDescription: React.FC<WorkDescriptionProps> = ({
       onMouseLeave={() => setIsHovered(false)}
     >
       <div style={{ flex: 1 }}>
-        <Title
-          title={title}
-          startDate={startDate}
-          stopDate={stopDate}
-          company={company}
-        />
+        <Typography
+          style={{
+            fontFamily: "monospace",
+            fontWeight: 700,
+            letterSpacing: ".1rem",
+            color: "black",
+            textDecoration: "none",
+            fontSize: "1.1rem",
+            textTransform: "uppercase",
+          }}
+        >
+          {title}{" "}
+          <span
+            style={{
+              fontFamily: "monospace",
+              fontWeight: 550,
+              color: "gray",
+              textDecoration: "none",
+              fontSize: "1rem",
+              textTransform: "uppercase",
+            }}
+          >
+            | {date}
+          </span>
+        </Typography>
         <div style={{ overflowY: "hidden" }}>
           <Typography
             style={{
@@ -79,4 +94,4 @@ const WorkDescription: React.FC<WorkDescriptionProps> = ({
   );
 };
 
-export default WorkDescription;
+export default AccomplishmentDescription;

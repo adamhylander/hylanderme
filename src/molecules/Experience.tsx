@@ -33,7 +33,7 @@ function Experience() {
       stopDate: "Dec 2023",
       company: "Linköping University",
       description:
-        "I was both a supervisor and a tutor for a group of 8 students in the courses Linear Algebra, Data Structures and Algorithms, Design and Development of Interactive Systems, and lastly Diversity and Gender in Application Development.",
+        "I was both a supervisor and a tutor for a group of 8 students in the courses Linear Algebra, Data Structures and Algorithms, Design and Development of Interactive Systems, and Diversity and Gender in Application Development.",
     },
     {
       title: "Barista",

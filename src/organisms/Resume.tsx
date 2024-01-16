@@ -6,8 +6,8 @@ import {
   Academics,
   Publications,
   Skills,
-  ExtraCurricular,
   Projects,
+  Achievements,
 } from "../templates";
 
 function Resume() {
@@ -17,7 +17,7 @@ function Resume() {
     { value: "Academics", label: "Academics" },
     { value: "Publications", label: "Publications" },
     { value: "Projects", label: "Projects" },
-    { value: "ExtraCurricular", label: "Extra-Curricular" },
+    { value: "Achievement", label: "Achievements & Extra-Curricular" },
     { value: "Skills", label: "Skills" },
   ];
 
@@ -39,10 +39,10 @@ function Resume() {
         return <Publications />;
       case "Projects":
         return <Projects />;
-      case "ExtraCurricular":
-        return <ExtraCurricular />;
       case "Skills":
         return <Skills />;
+      case "Achievement":
+        return <Achievements />;
       default:
         return <Summary />;
     }
@@ -100,7 +100,7 @@ function Resume() {
           <Tab key={index} value={tab.value} label={tab.label} />
         ))}
       </Tabs>
-      <Box style={{ padding: "20px" }}>{renderTabComponent()}</Box>
+      <Box style={{ padding: "1.8%" }}>{renderTabComponent()}</Box>
     </Container>
   );
 }

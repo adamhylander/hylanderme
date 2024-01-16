@@ -1,7 +1,7 @@
 import Box from "@mui/material/Box";
-import Header from "../organisms/Header";
-import Profile from "../organisms/Profile";
-import Resume from "../organisms/Resume";
+import Header from "../containers/Header";
+import Profile from "../containers/Profile";
+import Resume from "../containers/Resume";
 
 function Main() {
   return (

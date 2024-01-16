@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import WorkDescription from "./WorkDescription";
+import WorkDescription from "../molecules/WorkDescription";
 
 interface WorkData {
   title: string;

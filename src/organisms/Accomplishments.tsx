@@ -1,4 +1,4 @@
-import AccomplishmentDescription from "./AccomplishmentDescription";
+import AccomplishmentDescription from "../molecules/AccomplishmentDescription";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
 function Accomplishments() {

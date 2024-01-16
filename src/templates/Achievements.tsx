@@ -1,6 +1,6 @@
 import { Box, Typography } from "@mui/material";
 import AchievementTimeline from "../molecules/AchievementsTimeline";
-import Accomplishments from "../molecules/Accomplishments";
+import Accomplishments from "../organisms/Accomplishments";
 
 function Achievements() {
   return (

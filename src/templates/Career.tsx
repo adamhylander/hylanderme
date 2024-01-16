@@ -1,6 +1,6 @@
 import { Typography, Box } from "@mui/material";
 import WorkTitle from "../molecules/WorkDescription";
-import Experience from "../molecules/Experience";
+import Experience from "../organisms/Experience";
 import CareerTimeline from "../molecules/CareerTimeLine";
 
 function Career() {

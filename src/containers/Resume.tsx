@@ -5,7 +5,6 @@ import {
   Career,
   Academics,
   Publications,
-  Skills,
   Projects,
   Achievements,
 } from "../templates";
@@ -18,7 +17,6 @@ function Resume() {
     { value: "Publications", label: "Publications" },
     { value: "Projects", label: "Projects" },
     { value: "Achievement", label: "Achievements & Extra-Curricular" },
-    { value: "Skills", label: "Skills" },
   ];
 
   const [value, setValue] = React.useState("Summary");
@@ -39,8 +37,6 @@ function Resume() {
         return <Publications />;
       case "Projects":
         return <Projects />;
-      case "Skills":
-        return <Skills />;
       case "Achievement":
         return <Achievements />;
       default:

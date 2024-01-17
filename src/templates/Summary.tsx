@@ -43,7 +43,11 @@ function Summary() {
         cybersecurity learning platforms, such as tryhackme.com, and am looking
         to give CTF challenges and competitions a go in the near future.
       </div>
-      {/* LÄGG TILL BULLET POINTS MED SKILLS/LIBRARIES/TOOLS OCH DET */}
+      <Box>
+        <Box style={{ width: "20%", height: "100px", borderRadius: "10px", }}>
+
+        </Box>
+      </Box>
     </Box>
   );
 }
